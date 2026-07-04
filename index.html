@@ -2,491 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/dz.png">
-  <title>Daniah Zaheda | Computer Systems Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Main CSS -->
+  <meta name="description" content="Daniah Mohammed Zaheda - Computer Systems Engineering Student, Front-End Developer, Backend Learner, and QA Enthusiast." />
+  <title>Daniah Mohammed Zaheda | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <div class="nav-left">
-        <div class="logo-circle">DZ</div>
-        <div class="nav-title">
-          <span>Daniah Mohammed Zaheda</span>
-          <span>Computer Systems Engineer</span>
-        </div>
-      </div>
-
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span>
-      </button>
-
-      <div class="nav-links">
-        <a href="#about" class="active">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
+  <header class="site-header">
+    <a class="logo" href="#home">Daniah</a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">☀️</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+    </div>
   </header>
 
-  <div class="page">
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="hero-orbit">
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="hero-left">
-        <div class="hero-pill">
-          <span class="hero-pill-dot"></span>
-          Open to internships & remote work
-        </div>
-
-        <h1 class="hero-heading">
-          From <span class="hero-highlight">hardware & software</span>  
-          to modern web experiences.
-        </h1>
-
-        <div class="hero-role">
-          <span>></span>
-          <span id="typewriter"></span>
-        </div>
-
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Daniah Mohammed Zaheda</h1>
+        <h2>Computer Systems Engineering Student</h2>
         <p class="hero-text">
-          I’m <strong>Daniah Mohammed Zaheda</strong>, a Computer Systems Engineering student
-          who loves connecting low-level systems, problem-solving, and clean front-end design.
-          I enjoy building things that are both <strong>efficient inside</strong> and
-          <strong>simple outside</strong> for people to use.
+          Front-End Developer • Backend Learner • QA Enthusiast
         </p>
-
-        <div class="hero-badges">
-          <span class="hero-badge">C++ · Algorithms · Data Structures</span>
-          <span class="hero-badge">HTML · CSS · JavaScript · React</span>
-          <span class="hero-badge">Embedded & Digital Systems</span>
+        <div class="hero-buttons">
+          <a class="btn primary" href="assets/Daniah_Mohammed_Zaheda_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn secondary" href="#projects">View Projects</a>
         </div>
-
-        <div class="hero-actions">
-          <a href="assets/CV updated.pdf" class="btn btn-primary" target="_blank" rel="noreferrer">
-            Download CV
-          </a>
-          <a href="#contact" class="btn btn-ghost">
-            Let’s connect
-          </a>
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:daniahzaheda@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/daniahzaheda/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="https://github.com/DaniahZaheda" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
+          <a href="https://codeforces.com/profile/DaniahZ" target="_blank" rel="noopener" aria-label="Codeforces profile">Codeforces</a>
         </div>
       </div>
-
-      <div class="hero-right">
-        <div class="profile-shell">
-          <div class="profile-inner">
-            <img src="assets/daniah.png" alt="Portrait of Daniah Mohammed Zaheda" />
-          </div>
-          <div class="profile-chip">
-            <span class="profile-chip-dot"></span>
-            <span>Hebron · Palestine</span>
-          </div>
-        </div>
+      <div class="hero-image reveal">
+        <img src="assets/profile.jpg" alt="Portrait of Daniah Mohammed Zaheda" />
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="reveal">
-      <div class="section-label">About</div>
-      <h2 class="section-title">Who am I?</h2>
-
-      <div class="grid-two">
-        <div class="card card-soft">
-          <div class="about-text">
-            <p>
-              I’m a fourth-year <strong>Computer Systems Engineering</strong> student at
-              Palestine Polytechnic University. I have a strong foundation in C++, object-oriented
-              programming, algorithms, and data structures, and I enjoy teaching others what I learn.
-            </p>
-            <p>
-              Recently, I’ve been expanding my skills into <strong>front-end web development</strong>:
-              HTML, CSS, JavaScript, and React. I love turning ideas into responsive interfaces that
-              feel smooth, modern, and human-friendly.
-            </p>
-            <p>
-              My goal is to bridge <strong>hardware, software, and the web</strong> — from digital
-              systems and low-level logic all the way to the final UI that users interact with.
-            </p>
-          </div>
-
-          <div class="about-meta">
-            <span><span class="dot"></span> Computer Systems Engineering — PPU</span>
-            <span><span class="dot"></span> Competitive programming & problem solving</span>
-            <span><span class="dot"></span> Passion for teaching & documentation</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Quick snapshot</div>
-          <div class="card-sub">A few highlights about me.</div>
-
-          <ul class="skills-list">
-            <li>C++ Problem Solving Coach at PPU Code Academy since 2023.</li>
-            <li>Intern at Al Zahidi Software Company (SEO, UI/UX, testing & SDLC).</li>
-            <li>Comfortable working with both Windows & Linux environments.</li>
-            <li>Fluent in Arabic and English (speaking, reading, and writing).</li>
-          </ul>
-        </div>
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <span>About</span>
+        <h2>A little about me</h2>
+      </div>
+      <div class="about-card reveal">
+        <p>
+          I am a fifth-year Computer Systems Engineering student at Palestine Polytechnic University.
+          I enjoy building web applications, solving programming problems, and improving software
+          quality through testing. I am currently expanding my backend development skills while
+          continuing to build practical projects and learn new technologies.
+        </p>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="reveal">
-      <div class="section-label">Skills</div>
-      <h2 class="section-title">Technical toolbox</h2>
-
-      <div class="skills-grid">
-        <div class="card">
-          <div class="card-header">Programming & Core CS</div>
-          <div class="card-sub">Languages & computer science foundations.</div>
-          <ul class="skills-list">
-            <li>C++, Java, C#, JavaScript</li>
-            <li>HTML, CSS, Verilog HDL</li>
-            <li>Algorithms & Data Structures</li>
-            <li>Object-Oriented Programming (OOP)</li>
-            <li>Database management (SQL Server, Oracle SQL)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Web & Software Development</div>
-          <div class="card-sub">From UI to back-end concepts.</div>
-          <ul class="skills-list">
-            <li>Responsive layout with HTML, CSS, Bootstrap, Tailwind (learning)</li>
-            <li>Front-end logic with vanilla JS & React</li>
-            <li>ASP.NET MVC & Entity Framework basics</li>
-            <li>REST APIs consumption & JSON data handling</li>
-            <li>Software testing (manual & automation with Selenium)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Tools & Workflow</div>
-          <div class="card-sub">How I work day to day.</div>
-          <ul class="skills-list">
-            <li>VS Code, Visual Studio, NetBeans, SSMS</li>
-            <li>Node.js toolchain for web projects</li>
-            <li>Git & GitHub for version control</li>
-            <li>Notion & online tools for planning</li>
-            <li>Teamwork, documentation, and clear communication</li>
-          </ul>
-        </div>
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <span>Skills</span>
+        <h2>Technologies I work with</h2>
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="reveal">
-      <div class="section-label">Projects</div>
-      <h2 class="section-title">Selected work</h2>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="project">
-          <div class="project-title">Daily Tools Website</div>
-          <div class="project-type">Web Application · Front-End</div>
-          <p>
-            A web app that brings together daily prayer times, live weather, and
-            currency conversion in one interface. Uses public APIs to update data
-            in real time with a clean, responsive UI.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">APIs</span>
-          </div>
-          <a 
-            href="https://daniahzaheda.github.io/Daliy-Tools/" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View project →
-          </a>
+      <div class="skills-grid reveal">
+        <article class="skill-card">
+          <h3>Languages</h3>
+          <div class="chips"><span>C++</span><span>Java</span><span>JavaScript</span><span>C#</span><span>Verilog HDL</span></div>
         </article>
-
-        <!-- Project 2 -->
-        <article class="project">
-          <div class="project-title">Dshop E-Commerce Front-End</div>
-          <div class="project-type">Web Application · React</div>
-          <p>
-            A front-end e-commerce site that fetches products from a ready-made API,
-            supports user accounts, shopping cart, and checkout with validated forms
-            and responsive layout.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Bootstrap</span>
-            <span class="project-tag">Yup</span>
-            <span class="project-tag">Responsive UI</span>
-          </div>
-          <a 
-            href="#" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View project →
-          </a>
+        <article class="skill-card">
+          <h3>Front-End</h3>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Bootstrap</span><span>Tailwind</span></div>
         </article>
-
-        <!-- Project 3 -->
-        <article class="project">
-          <div class="project-title">Algorithms Comparison</div>
-          <div class="project-type">University Project · C++</div>
-          <p>
-            Analysed and compared the performance of Insertion Sort, Merge Sort, and
-            Quick Sort across different scenarios, focusing on time complexity and
-            behaviour on various input sizes.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">C++</span>
-            <span class="project-tag">Algorithms</span>
-            <span class="project-tag">Complexity</span>
-          </div>
-          <a 
-            href="https://drive.google.com/drive/u/1/folders/18EDHIg_1qynS8ojfTSWFOvWHhy-9gYLZ" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View project →
-          </a>
+        <article class="skill-card">
+          <h3>Backend & Databases</h3>
+          <div class="chips"><span>ASP.NET MVC</span><span>Entity Framework</span><span>SQL Server</span><span>Oracle SQL</span></div>
         </article>
-
-        <!-- Project 4 -->
-        <article class="project">
-          <div class="project-title">Digital Stopwatch Circuit</div>
-          <div class="project-type">Digital Systems · Hardware</div>
-          <p>
-            Designed a digital stopwatch using BCD counters, 7-segment displays,
-            control buttons, and a clock pulse generator to keep and display time.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Digital Logic</span>
-            <span class="project-tag">7-Segment</span>
-            <span class="project-tag">Circuit Maker</span>
-          </div>
-          <a 
-            href="https://drive.google.com/drive/u/1/folders/1njnAv6wU57Z3JheIgRZRQzp5w_hG2IEU" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View project →
-          </a>
+        <article class="skill-card">
+          <h3>Testing & QA</h3>
+          <div class="chips"><span>Manual Testing</span><span>Functional Testing</span><span>UI Testing</span><span>Exploratory Testing</span><span>Bug Reporting</span><span>Test Cases</span><span>Basic API Testing</span></div>
         </article>
-
-        <!-- Project 5 -->
-        <article class="project">
-          <div class="project-title">MIPS Pipelining Simulation</div>
-          <div class="project-type">Architecture · Simulation</div>
-          <p>
-            Simulated MIPS architecture with pipelining in MARS, identifying and solving
-            pipeline hazards with a focus on control hazards.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">MIPS</span>
-            <span class="project-tag">Pipelining</span>
-            <span class="project-tag">Computer Architecture</span>
-          </div>
-          <a 
-            href="#" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View project →
-          </a>
+        <article class="skill-card">
+          <h3>Tools</h3>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Visual Studio</span><span>SSMS</span><span>Postman</span></div>
         </article>
-
-        <!-- Project 6 -->
-        <article class="project">
-          <div class="project-title">HTML/CSS Training Page</div>
-          <div class="project-type">Web Design · Practice</div>
-          <p>
-            Designed and implemented a modern, responsive webpage in pure HTML and CSS
-            as part of front-end training, focusing on structure, typography, and layout.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">UI Layout</span>
-          </div>
-          <a 
-            href="https://daniahzaheda.github.io/landing-page/" 
-            class="project-link" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            View live demo →
-          </a>
+        <article class="skill-card">
+          <h3>Core Concepts</h3>
+          <div class="chips"><span>OOP</span><span>Algorithms</span><span>Data Structures</span><span>SDLC</span><span>Database Management</span></div>
         </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION -->
-    <section id="experience" class="reveal">
-      <div class="section-label">Path</div>
-      <h2 class="section-title">Experience & education</h2>
-
-      <div class="grid-two">
-        <div class="card">
-          <div class="card-header">Experience</div>
-          <div class="card-sub">Where I learned by doing.</div>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-role">C++ Problem Solving Coach</div>
-              <div class="timeline-place">PPU Code Academy</div>
-              <div class="timeline-time">Jul 2023 – Present</div>
-              <p style="margin-top:0.3rem; color:#4b5563;">
-                Teaching C++ programming and problem-solving to college students,
-                preparing them for contests and real-world challenges.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-role">Software Intern</div>
-              <div class="timeline-place">Al Zahidi Software Company</div>
-              <div class="timeline-time">Jun 2025 – Aug 2025</div>
-              <p style="margin-top:0.3rem; color:#4b5563;">
-                Worked on SEO fundamentals, UI/UX principles, software testing,
-                and SDLC phases through real projects and team collaboration.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-role">Radio Presenter</div>
-              <div class="timeline-place">Radio Alhuriya – “Alhuriya Children” Program</div>
-              <div class="timeline-time">Jan 2019 – Aug 2021</div>
-              <p style="margin-top:0.3rem; color:#4b5563;">
-                Presented a children’s program, building strong communication skills
-                and the ability to explain ideas clearly and simply.
-              </p>
-            </div>
+    <section class="section" id="experience">
+      <div class="section-heading reveal">
+        <span>Experience</span>
+        <h2>Training & work experience</h2>
+      </div>
+      <div class="timeline reveal">
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <p class="date">Jun 2026 – Present</p>
+            <h3>QA Intern — IzTech Valley</h3>
+            <p>Performed manual testing for restaurant and mall management web applications, including functional, UI, and exploratory testing.</p>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Education & learning</div>
-          <div class="card-sub">Formal studies and extra learning.</div>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-role">B.Sc. Computer Systems Engineering</div>
-              <div class="timeline-place">Palestine Polytechnic University · Hebron</div>
-              <div class="timeline-time">2022 – Present</div>
-              <p style="margin-top:0.3rem; color:#4b5563;">
-                Focusing on computer architecture, digital systems, programming,
-                and software development.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-role">CS & Problem Solving Course</div>
-              <div class="timeline-place">Knowledge Academy (Online)</div>
-              <div class="timeline-time">2023 – 2024</div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-role">Full Stack Front-End Development</div>
-              <div class="timeline-place">Knowledge Academy (Online)</div>
-              <div class="timeline-time">2024 – Ongoing</div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-role">Workshops</div>
-              <div class="timeline-place">LinkedIn · Git/GitHub · Competitive Programming</div>
-              <p style="margin-top:0.3rem; color:#4b5563;">
-                Continuous learning through technical workshops and coding trainings.
-              </p>
-            </div>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <p class="date">Jun 2025 – Aug 2025</p>
+            <h3>Intern — Al Zahidi Software Company</h3>
+            <p>Worked on manual testing for a medical clinic system, bug reports, SDLC, UI/UX basics, SEO fundamentals, and basic Selenium automation.</p>
           </div>
-        </div>
+        </article>
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <div>
+            <p class="date">Jul 2023 – Current</p>
+            <h3>C++ Problem Solving Coach — PPU Code Academy</h3>
+            <p>Taught C++ programming and problem-solving skills to university students.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="reveal">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Let’s build something together</h2>
-
-      <div class="contact-grid">
-        <div class="card card-soft">
-          <div class="card-header">Reach out</div>
-          <div class="card-sub">Feel free to contact me for internships, collaborations, or freelance work.</div>
-
-          <ul class="contact-list">
-            <li>
-              <span>Email</span>
-              <a href="mailto:daniahzaheda@gmail.com">daniahzaheda@gmail.com</a>
-            </li>
-            <li>
-              <span>Phone</span>
-              <a href="tel:+972597364071">+972 59-736-4071</a>
-            </li>
-            <li>
-              <span>Location</span>
-              Hebron, Palestine
-            </li>
-          </ul>
-
-          <div class="pill-links">
-            <a href="https://www.linkedin.com/in/daniahzaheda/" target="_blank" rel="noreferrer" class="pill-link">LinkedIn</a>
-            <a href="https://github.com/DaniahZaheda" target="_blank" rel="noreferrer" class="pill-link">GitHub</a>
-            <a href="https://codeforces.com/profile/DaniahZ" target="_blank" rel="noreferrer" class="pill-link">Codeforces</a>
-            <a href="https://leetcode.com/u/DaniahZ/" target="_blank" rel="noreferrer" class="pill-link">LeetCode</a>
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <span>Projects</span>
+        <h2>Featured work</h2>
+      </div>
+      <div class="projects-grid reveal">
+        <article class="project-card">
+       
+          <h3>AI-Powered Recipe Recommendation</h3>
+          <p>Web tool that recommends recipes based on user-provided ingredients using Gemini AI API.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Cloudflare Workers</span></div>
+          <div class="project-links">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7439642547947343872/" target="_blank" rel="noopener">View Project</a>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Quick message</div>
-          <div class="card-sub">Send me a message and I’ll get back to you by email.</div>
-
+        </article>
+        <article class="project-card">
+          
+          <h3>Daily Tools Project</h3>
+          <p>Web application for prayer times, weather updates, and currency conversion using real-time APIs.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></div>
+          <div class="project-links">
+            <a href="https://daniahzaheda.github.io/Daliy-Tools/" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/DaniahZaheda/Daliy-Tools" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
          
-          <form class="contact-form" id="contact-form">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="you@example.com" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell me about your idea or project..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:max-content;">Send message</button>
-            <div class="form-note">
-              The button will open Gmail with your message ready to send.
-            </div>
-          </form>
-        </div>
+          <h3>DShop</h3>
+          <p>Front-end e-commerce application with product listing, account creation, login, cart, checkout, and form validation.</p>
+          <div class="tags"><span>React</span><span>Bootstrap</span><span>CSS</span><span>Yup</span></div>
+          <div class="project-links muted-link">
+            <span>Link will be added soon</span>
+          </div>
+        </article>
+        <article class="project-card">
+         
+          <h3>AI Educational Prototype</h3>
+          <p>Hackathon prototype using a RAG model to generate personalized learning plans and daily educational activities.</p>
+          <div class="tags"><span>AI</span><span>RAG</span><span>Hackathon</span></div>
+          <div class="project-links">
+            <a href="https://github.com/DaniahZaheda/team2AIfd" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <footer>
-      © <span id="year"></span> Daniah Mohammed Zaheda — Computer Systems Engineer.
-    </footer>
-  </div>
+    <section class="section achievements" id="achievements">
+      <div class="section-heading reveal">
+        <span>Achievements</span>
+        <h2>Competitions & certificates</h2>
+      </div>
+      <div class="achievement-grid reveal">
+        <article><strong>14th Place</strong><span>Palestine National Quantum Computing & AI Hackathon</span></article>
+        <article><strong>IEEE Xtreme 19.0</strong><span>Global 24-hour programming competition participant</span></article>
+        <article><strong>Mind & Code</strong><span>Participated in weekly programming challenges</span></article>
+        <article><strong>Training</strong><span>Front-End Development, CS & Problem Solving, GSG Freelance, Manual QA</span></article>
+      </div>
+    </section>
 
-  <!-- Main JS -->
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <span>Contact</span>
+        <h2>Let's connect</h2>
+      </div>
+      <div class="contact-card reveal">
+        <p>I am open to training opportunities, collaboration, and junior-level software or QA roles.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:daniahzaheda@gmail.com">Email Me</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/daniahzaheda/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/DaniahZaheda" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn secondary" href="assets/Daniah_Mohammed_Zaheda_CV.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Daniah Mohammed Zaheda.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
